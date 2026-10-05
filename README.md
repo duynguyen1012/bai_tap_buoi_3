@@ -83,7 +83,7 @@ Màn hình được phân chia cân đối làm hai phần bằng `Column` và `
 ## 🎥 Video Demo chạy ứng dụng
 
 > [!NOTE]
-> **Video demo:** Sẽ được cập nhật trong thời gian sớm nhất.
+> **Video demo:** https://drive.google.com/file/d/14G9tRl0KQBrE55fmN-lAGo72wIDwmHB4/view?usp=sharing
 
 ---
 
