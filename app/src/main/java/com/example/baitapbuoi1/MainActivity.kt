@@ -181,11 +181,15 @@ fun Screen1(navController: NavController) {
                 onClick = {
                     val trimmedName = name.trim()
                     val trimmedId = studentId.trim()
+                    // Định dạng MSSV: Viết hoa, chữ cái đầu tiên là B, có 6 chữ số (Ví dụ: BIT240080)
+                    val studentIdRegex = Regex("^B[A-Z]*\\d{6}$")
 
                     if (trimmedName.isEmpty() || trimmedId.isEmpty()) {
                         Toast.makeText(context, "Dữ liệu không được để trống", Toast.LENGTH_SHORT).show()
+                    } else if (!trimmedId.matches(studentIdRegex)) {
+                        Toast.makeText(context, "Mã số sinh viên không đúng định dạng!", Toast.LENGTH_SHORT).show()
                     } else if (trimmedName.equals("duy nguyễn", ignoreCase = true) &&
-                        trimmedId.equals("bit240080", ignoreCase = true)
+                        trimmedId == "BIT240080"
                     ) {
                         val encodedName = Uri.encode(trimmedName)
                         val encodedId = Uri.encode(trimmedId)

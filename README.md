@@ -59,10 +59,11 @@ Màn hình được phân chia cân đối làm hai phần bằng `Column` và `
 
 ### 2. Quản lý trạng thái (State Management) & Kiểm tra dữ liệu (Validation)
 * Sử dụng `remember { mutableStateOf("") }` để theo dõi giá trị nhập của `name` và `studentId`.
-* **Quy tắc kiểm tra:**
+* **Quy tắc kiểm tra (Validation):**
   * **Trống dữ liệu:** Hiển thị thông báo Toast `Dữ liệu không được để trống`.
-  * **Đúng thông tin:** So khớp không phân biệt hoa thường (`name = "duy nguyễn"` & `studentId = "bit240080"`).
-  * **Sai thông tin:** Hiển thị thông báo Toast `Thông tin sinh viên không chính xác!`.
+  * **Sai định dạng MSSV:** Mã số sinh viên bắt buộc phải viết hoa, chữ cái đầu tiên là `B` và có 6 chữ số (ví dụ: `BIT240080`). Nếu sai định dạng, hiển thị thông báo Toast `Mã số sinh viên không đúng định dạng!`.
+  * **Đúng thông tin sinh viên:** So khớp Name (`"duy nguyễn"`, không phân biệt hoa thường) và MSSV (`"BIT240080"`, chuẩn chữ hoa).
+  * **Sai thông tin sinh viên:** Hiển thị thông báo Toast `Thông tin sinh viên không chính xác!`.
 
 ### 3. Điều hướng an toàn với Navigation Compose
 * Khởi tạo `NavHost` với `rememberNavController()` và `startDestination = "screen1"`.
