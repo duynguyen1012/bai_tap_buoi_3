@@ -74,10 +74,10 @@ Màn hình được phân chia cân đối làm hai phần bằng `Column` và `
 
 ## 📸 Hình ảnh Demo giao diện
 
-| Trước khi nhập thông tin (Screen 1) | Sau khi nhập đúng & Chuyển màn hình (Screen 2) |
-| :---: | :---: |
-| <img src="docs/screenshots/screen1_demo.png" width="340" alt="Screen 1 Demo" /> | <img src="docs/screenshots/screen2_demo.png" width="340" alt="Screen 2 Demo" /> |
-| *Giao diện 6 khối màu tỷ lệ & Form nhập liệu* | *Màn hình chi tiết nhận dữ liệu & Nút Back* |
+| 1. Giao diện ban đầu (Screen 1) | 2. Báo lỗi sai định dạng MSSV | 3. Nhập đúng & Chuyển màn hình (Screen 2) |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/screen1_demo.png" width="260" alt="Screen 1 Demo" /> | <img src="docs/screenshots/invalid_format_demo.png" width="260" alt="Báo lỗi sai định dạng MSSV" /> | <img src="docs/screenshots/screen2_demo.png" width="260" alt="Screen 2 Demo" /> |
+| *Giao diện 6 khối màu tỷ lệ & Form nhập liệu* | *Ảnh minh họa cho việc khi nhập mã số sinh viên không đúng định dạng (Toast: "Mã số sinh viên không đúng định dạng!")* | *Màn hình chi tiết nhận dữ liệu & Nút Back* |
 
 ---
 
