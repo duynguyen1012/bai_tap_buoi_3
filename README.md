@@ -137,7 +137,7 @@ bai_tap_buoi_3/
 
 ---
 
-## 👤 Thông tin tác giả
+## 👤 Người thực hiện:
 
 * **Họ và tên:** Nguyễn Đức Duy
 * **Mã số sinh viên (MSSV):** BIT240080
